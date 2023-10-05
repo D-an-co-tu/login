@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Nhập</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: #777;
+            font-size: 14px;
+            font-family: Arial;
+            background-color: #fff;
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 100%;
+            height: 64px;
+            background-color: #515154;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+            .container .container-content {
+                display: flex;
+                max-width: 1200px;
+                align-items: center;
+                justify-content: space-between;
+                margin: auto;
+                padding: 0;
+            }
+
+        .logo img {
+            width: 173px;
+            height: 45px;
+            margin: 9.5px 0px;
+        }
+
+        .container .menu {
+            width: 855px;
+            height: 64px;
+            margin: auto;
+            border: unset;
+            position: relative;
+            z-index: 5;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            color: #d2d2d7;
+            margin-top: 10px;
+        }
+
+        .iphone {
+            width: 79px;
+            height: 64px;
+        }
+
+        .ipad {
+            width: 62px;
+            height: 64px;
+        }
+
+        .mac {
+            width: 60px;
+            height: 64px;
+        }
+
+        .watch {
+            width: 74px;
+            height: 64px;
+        }
+
+        .music {
+            width: 96px;
+            height: 64px;
+        }
+
+        .pk {
+            width: 90px;
+            height: 64px;
+        }
+
+        .service {
+            width: 98px;
+            height: 64px;
+        }
+
+        .news {
+            width: 83px;
+            height: 64px;
+        }
+
+        .sale {
+            width: 111px;
+            height: 64px;
+        }
+
+        .search {
+            width: 10px;
+            height: 34px;
+            margin-top: 20px;
+        }
+
+        .giohang img {
+            width: 25px;
+            height: 25px;
+            margin-left: 8px;
+            margin-top: 15px;
+        }
+
+        .customer img {
+            width: 20px;
+            height: 20px;
+            margin-top: 18px;
+        }
+
+        .vn {
+            margin-top: 22px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .eng {
+            margin-top: 22px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .menu1 {
+            width: 172px;
+            height: 64px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-left: 120px;
+            color: #515154;
+            line-height: 12px;
+            font-size: 13px;
+        }
+
+        nav {
+            background-color: #fff;
+            height: 48px;
+            width: 100%;
+            padding-top: 10px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .main {
+            width: 1155px;
+            height: 1087px;
+            padding: 40px 15px 100px 15px;
+            margin: 0 164px;
+            display: flex;
+        }
+
+        .left {
+            width: 600px;
+            height: 1087px;
+        }
+
+            .left img {
+                width: 658px;
+                height: 467px;
+            }
+
+        .right {
+            width: 462px;
+            height: 1087px;
+            margin-left: 100px;
+            color: #1d1d1f;
+            font-family: Arial, Helvetica, sans-serif;
+            ;
+        }
+
+            .right h1 {
+                font-size: 30px;
+                color: #1d1d1f;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 16px 0;
+                margin-bottom: 0px;
+            }
+
+        .form-top {
+            font-size: 15px;
+            width: 462px;
+            height: 555px;
+            color: #1D1D1F;
+        }
+
+        #tendangnhap {
+            border: 1px solid #ebebeb;
+            border-radius: 8px;
+            width: 436px;
+            height: 30px;
+            width: 436px;
+            height: 30px;
+            padding: 8px 8px 8px 16px;
+            margin: 0.727px;
+        }
+
+        #nhapmatkhau {
+            border: 1px solid #ebebeb;
+            border-radius: 8px;
+            width: 436px;
+            height: 30px;
+            width: 436px;
+            height: 30px;
+            padding: 8px 8px 8px 16px;
+            margin: 0.727px;
+        }
+
+        .nhomatkhau {
+            width: 462px;
+            ;
+            height: 36px;
+            margin-bottom: 20px;
+            color: #86868b;
+        }
+
+        #checkboxbtn {
+            width: 18px;
+            height: 18px;
+            margin: 8px 5px 5px 5px;
+        }
+
+        .forgetpass {
+            float: right;
+            width: 113px;
+            height: 26px;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        .buttondnhap {
+            width: 462px;
+            height: 28px;
+            padding: 10px 30px;
+            background: #0066CC;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 20px;
+        }
+
+        #dnhap-button {
+            margin-top: 5px;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+            background: #0066CC;
+        }
+
+        .chuacotk {
+            width: 462px;
+            font-size: 15px;
+            color: #1d1d1f;
+            height: 32px;
+            margin-top: 30px;
+        }
+
+        .taotk {
+            width: 140px;
+            height: 24px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-content">
+                <div class="logo">
+                    <img src="https://shopdunk.com/images/thumbs/0012445_Logo_ShopDunk.png" />
+                </div>
+                <div class="menu">
+                    <ul class="menu-content">
+                        <li class="iphone">iPhone</li>
+                        <li class="ipad">iPad</li>
+                        <li class="mac">Mac</li>
+                        <li class="watch">Watch</li>
+                        <li class="music">Âm thanh</li>
+                        <li class="pk">Phụ kiện</li>
+                        <li class="service">Dịch vụ</li>
+                        <li class="news">Tin tức</li>
+                        <li class="sale">Khuyến mãi</li>
+                    </ul>
+
+                </div>
+                <div class="menu1">
+                    <div class="search">
+                        <img src="https://shopdunk.com/images/uploaded-source/icon/search-icon-1.png" />
+                    </div>
+                    <div class="giohang">
+                        <img src="https://shopdunk.com/images/uploaded-source/icon/cart-icon.png" />
+                    </div>
+                    <div class="customer">
+                        <img src="https://shopdunk.com/images/uploaded-source/icon/login.png" />
+
+                    </div>
+                    <div class="vn">
+                        <img src="https://shopdunk.com/images/flags/vn.png" />
+                    </div>
+                    <div class="eng">
+                        <img src="https://shopdunk.com/images/flags/us.png" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                Trang chủ
+            </li>
+            <li>
+                > Đăng nhập
+            </li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="left">
+            <img src="https://shopdunk.com/images/uploaded/banner/VNU_M492_08%201.jpeg" />
+
+        </div>
+        <form class="right">
+            <div class="information">
+                <div class="dky">
+                    <h1>Đăng ký</h1>
+                </div>
+
+                <div class="mid-info">
+                    <div class="form-top">
+                        <div class="dangnhap">
+                            <p>Tên đăng nhập:</p>
+                            <input type="text" name="tendangnhap" id="tendangnhap" />
+                        </div>
+                        <div class="matkhau">
+                            <p>Mật khẩu:</p>
+                            <input type="text" name="nhapmatkhau" id="nhapmatkhau" />
+                        </div>
+                        <div class="nhomatkhau">
+
+                            <input type="checkbox" id="checkboxbtn" name="checkboxbtn" value="" />
+                            <label for="checkboxbtn">Nhớ mật khẩu</label>
+                            <a class="forgetpass" href="#">Quên mật khẩu</a>
+                        </div>
+                        <div class="buttondnhap">
+                            <button type="submit" onclick="return validate();" name="dnhap-button" id="dnhap-button">Đăng nhập</button>
+                        </div>
+                        <div class="chuacotk">
+                            <label> Bạn Chưa Có Tài Khoản? </label>
+                            <a class="taotk" href="#">Tạo tài khoản ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
